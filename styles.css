@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between; /* Display sections side by side */
+    align-items: flex-start; /* Align sections at the top */
+    flex-wrap: wrap; /* Allow for wrapping when the screen size is smaller */
+}
+
+.current-weather {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 45%; /* Adjust the width as needed */
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.current-weather h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+}
+
+.current-weather-tiles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-weather-tile {
+    text-align: center;
+    color: #fff;
+    width: 200px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.weather-icon img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.tile {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.tile h3 {
+    font-size: 24px;
+}
+
+.tile p {
+    font-size: 32px;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.forecast {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 45%; /* Adjust the width as needed */
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.forecast-days {
+    display: flex;
+    flex-wrap: wrap; /* Allow for wrapping of forecast days */
+    justify-content: space-between;
+}
+
+.forecast-day {
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.forecast-day h3 {
+    font-size: 20px;
+}
+
+.forecast-day .weather-icon img {
+    max-width: 70px;
+    display: block;
+    margin: 10px auto;
+}
+
+.forecast-day .tile p {
+    font-size: 24px;
+}
+
+.forecast-day:hover {
+    transform: scale(1.05);
+}

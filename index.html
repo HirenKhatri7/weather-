@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Forecast</h1>
+        <div class="search">
+            <input type="text" class="searchinput" placeholder="Enter city name" spellcheck="false">
+            <button class="searchbutton">search</button>
+          </div>
+    </header>
+    <main>
+        <section class="current-weather">
+            <h2>Current Weather</h2>
+            <h3 class="city1"></h3>
+            <div class="weather-icon">
+                <img src="" alt="Weather Icon" class="weathericon">
+            </div>
+            <div class="tiles">
+                <div class="tile temperature">
+                    <h3>Temperature</h3>
+                    <p class="temp"></p>
+                </div>
+                <div class="tile humidity">
+                    <h3>Humidity</h3>
+                    <p class="humidity"></p>
+                </div>
+                <div class="tile wind">
+                    <h3>Wind</h3>
+                    <p class="wind"></p>
+                </div>
+            </div>
+        </section>
+        <section class="forecast">
+            <h2>2-Day Forecast</h2>
+            <div class="forecast-days">
+                <div class="forecast-day">
+                    <h3>Tomorrow</h3>
+                    <div class="weather-icon">
+                        <img src="" alt="Weather Icon" class="weathericon2">
+                    </div>
+                    <div class="tile temperature">
+                        <p class="temptwo">28°C</p>
+                    </div>
+                    <div class="tile humidity">
+                        <p class="humiditytwo">65%</p>
+                    </div>
+                    <div class="tile wind">
+                        <p class="windtwo">12 km/h</p>
+                    </div>
+                </div>
+                <div class="forecast-day">
+                    <h3>Day after Tomorrow</h3>
+                    <div class="weather-icon">
+                        <img src="" alt="Weather Icon" class="weathericon3">
+                    </div>
+                    <div class="tile temperature">
+                        <p class="tempthree">30°C</p>
+                    </div>
+                    <div class="tile humidity">
+                        <p class="humiditythree">60%</p>
+                    </div>
+                    <div class="tile wind">
+                        <p class="windthree">14 km/h</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="main.js">
+    </script>
+</body>
+</html>
