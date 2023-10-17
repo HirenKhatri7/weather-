@@ -129,3 +129,27 @@ h1 {
 .forecast-day:hover {
     transform: scale(1.05);
 }
+@media screen and (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .searchinput,
+    .searchbutton {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .tiles,
+    .forecast-days {
+        flex-direction: column;
+    }
+
+    .tile,
+    .forecast-day {
+        margin-bottom: 20px;
+    }
+}
+
+
